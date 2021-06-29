@@ -41,7 +41,7 @@
 
     <!-- ------------------------------------section2(Middle page) ------------------------------------>
     <section class="section" id="sec2">
-        <form class="main_div" id="sec2_mainDiv">
+        <form onsubmit="return submit2();"  class="main_div" id="sec2_mainDiv">
             <!-- first name -->
             <div class="naming" id="mp_box1">
                 <div>
@@ -59,7 +59,7 @@
             <div class="naming">
                 <div>
                     <!-- <label>Lover Name</label> -->
-                    <input class="input" id="otherName" type="text" placeholder="Lover Name" onkeyup="validityFunc()" required>
+                    <input class="input" id="otherName" type="text" placeholder="Lover Name" required>
                 </div>
                 <div class="btn">
                     <input id="3" class="radioBtn" type="radio" name="gender2" required><label for="3">Female</label>
@@ -68,7 +68,7 @@
             </div>
             <!-- Calculate -->
             <div>
-                <input class="submit" type="submit" id="submitId" onclick="submit2()" value="Calculate">
+                <input class="submit" type="submit" id="submitId" value="Calculate">
             </div>
         </form>
     </section>
