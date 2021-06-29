@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <!-- font icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css" ; </head>
+
+<body>
+    <!-- header  -->
+    <header>
+        <audio src="music & gif/music.mp3" autoplay></audio>
+        <div id="music" onclick="musicFunc()"><i id="icon" class="far fa-play-circle"></i></div>
+        <h4>True Love Meter</h4>
+
+    </header>
+    <!-- ------------------------------------section1(landing page) ------------------------------------>
+    <section class="section" id="sec1">
+        <div class="main_div">
+            <div id="lp_box1">
+                <div id="para">
+                    <p>hmm...</p>
+                    <p>Love is in the air</p>
+                </div>
+            </div>
+            <div id="lp_box2">
+                <input class="submit" type="submit" value="Play" onclick="play()">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ------------------------------------section2(Middle page) ------------------------------------>
+    <section class="section" id="sec2">
+        <form class="main_div" id="sec2_mainDiv">
+            <!-- first name -->
+            <div class="naming" id="mp_box1">
+                <div>
+                    <!-- <label>Your Name</label> -->
+                    <input class="input" id="urName" type="text" placeholder="Your Name"  required>
+                </div>
+                <div class="btn">
+                    <input id="1" class="radioBtn" type="radio" name="gender1" required><label for="1">Female</label>
+                    <input id="2" class="radioBtn" type="radio" name="gender1"><label for="2">Male</label>
+
+                </div>
+
+            </div>
+            <!-- second name -->
+            <div class="naming">
+                <div>
+                    <!-- <label>Lover Name</label> -->
+                    <input class="input" id="otherName" type="text" placeholder="Lover Name" onkeyup="validityFunc()" required>
+                </div>
+                <div class="btn">
+                    <input id="3" class="radioBtn" type="radio" name="gender2" required><label for="3">Female</label>
+                    <input id="4" class="radioBtn" type="radio" name="gender2"><label for="4">Male</label>
+                </div>
+            </div>
+            <!-- Calculate -->
+            <div>
+                <input class="submit" type="submit" id="submitId" onclick="submit2()" value="Calculate">
+            </div>
+        </form>
+    </section>
+
+    <!-- ------------------------------------section3(Ending page) ------------------------------------>
+    <section class="section" id="sec3">
+        <div class="main_div" id="sec3_mainDiv">
+            <!-- advise -->
+            <div id="msg">
+                <p id="advice">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta animi quaerat soluta
+                    consequatur totam
+                    libero ea nemo molestias, ad quis dignissimos accusantium ut. Doloremque?</p>
+            </div>
+            <!-- given name -->
+            <div id="result"> </div>
+
+            <!-- go to landing page -->
+            <div>
+                <input class="submit" id="replay" type="submit" value="Replay" onclick="replay()">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <p>&copy; copyright www.truelovecalculator.com ! All Right Reserved</p>
+    </footer>
+</body>
+
+<script src="index.js">
+</script>
+
+</html>

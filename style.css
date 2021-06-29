@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Great Vibes', cursive;
+    background-image: url("music\ &\ gif/rose_gif.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    color: white;
+}
+
+/* --------------------------------------------hearder section-----------------------------*/
+header {
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header h4 {
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 5px;
+    text-shadow: 8px 8px 11px grey, 13px 8px 7px red, 3px 4px 7px white;
+}
+
+header div {
+    height: 46px;
+    width: 46px;
+    position: absolute;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 23px;
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 32px;
+    font-weight: bold;
+    box-shadow: 0px 0px 1px 2px white;
+    animation: rotation 1.5s linear 0s infinite ;
+}
+
+@keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+header div:hover {
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgba(224, 19, 19, 0.5);
+}
+
+/* main class */
+.section {
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.main_div {
+    height: 80vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit {
+    height: 36px;
+    width: auto;
+    padding:2px 15px;
+    font-size: 21px;
+    color: white;
+    font-weight: bolder;
+    box-shadow: 1px 1px 10px 2px red, 1px 1px 2px 2px white;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 5px;
+    background-color: transparent;
+    border-radius: 20px;
+    margin:20px 20px;
+}
+
+.submit:hover {
+    font-size: 19px;
+    cursor: pointer;
+    background-color: rgba(224, 19, 19, 0.5);
+}
+.submit:active {
+    background-color: rgba(105, 88, 88, 0.5);
+}
+/* ----------------------------------------section1(landing page)---------------------------------- */
+#sec1 {
+    display: flex;
+}
+#lp_box1 {
+    height: 82%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#para {
+    background-image: url("music\ &\ gif/love_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 39%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 7px 3px 2px darkred;
+    font-weight: bold;
+    font-size: 15px;
+    animation: anime 3s ease-out 2s 1 alternate forwards;
+}
+
+@keyframes anime {
+    0% {
+        -webkit-transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(2.5);
+    }
+}
+
+/* ----------------------------------------section2(Middle page)---------------------------------- */
+#sec2 {
+    display: none;
+}
+
+#sec2_mainDiv {
+    justify-content: center;
+}
+.naming {
+    height: 50px;
+    width: 500px;
+    padding: 3px;
+    display: flex;
+    border-bottom: 3px solid white;
+
+}
+#sec2 input{
+    color:white;
+}
+.input {
+    border-style: none;
+    background-color: transparent;
+    font-size: 31px;
+    font-weight: bolder;
+    text-shadow: 3px 3px 5px red, 3px 3px 5px white;
+    height: 42px;
+    width: 315px;
+    outline: none;
+    overflow: hidden;
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 4px;
+
+}
+
+.btn {
+    height: 41px;
+    width: 175px;
+    display: flex;
+    color:gray;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    text-shadow: 3px 3px 5px red, 3px 3px 5px white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radioBtn {
+    cursor: pointer;
+    font-size: 10px;
+}
+.btn label {
+    cursor: pointer;
+}
+/* ----------------------------------------section3(ending page)---------------------------------- */
+#sec3 {
+    display: none;
+}
+
+#msg {
+    background-image: url("music\ &\ gif/love_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    animation: anime 3s ease-out 0s 1 alternate forwards;
+}
+
+@keyframes anime {
+    0% {
+        height: 10%;
+        width: 10%;
+        font-size: 5px;
+    }
+    100% {
+        height: 100%;
+        width: 100%;
+        font-size: 35px;
+
+    }
+}
+
+#msg p {
+    padding: 0px 5px;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: gray;
+    text-shadow: 1px 1px 2px darkred;
+    background-color: rgba(175, 164, 164, 0.6);
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+#result {
+    padding: 0px 10px;
+    margin-top: 20px;
+    width: auto;
+    height: 60px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px darkred;
+    background-color: rgba(158, 12, 12, 0.6);
+}
+
+#replay {
+    margin: 10px 0px;
+}
+
+/* -------------------------------------footer---------------------------- */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    padding: 3px;
+}
