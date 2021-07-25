@@ -6,4 +6,3 @@
   
 -> An audio having pause and play button will start as user open this website.
 
-https://ankita022-1.github.io/True-Love-Meter/
